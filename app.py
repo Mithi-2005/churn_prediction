@@ -7,11 +7,11 @@ import pickle
 
 model = tf.keras.models.load_model('artifacts/model.h5')
 
-with open(r'./artifacts\label_encoder_gender.pkl','rb') as file:
+with open('artifacts/label_encoder_gender.pkl','rb') as file:
     label_enocder_gender=pickle.load(file)
-with open(r'./artifacts\ohe_geo.pkl','rb') as file:
+with open('artifacts/ohe_geo.pkl','rb') as file:
     ohe_geo=pickle.load(file)
-with open(r'./artifacts\scaler.pkl','rb') as file:
+with open('artifacts/scaler.pkl','rb') as file:
     scaler=pickle.load(file)
     
 ## Streamlit App
